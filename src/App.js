@@ -26,7 +26,47 @@ const App=()=> {
       itemArray[0] !=="empty"){
         setWinMessage(`${itemArray[0]} won`)
       }
-  }
+    else if(itemArray[3]===itemArray[4] &&
+      itemArray[3]===itemArray[5]&&
+      itemArray[3]!== "empty"){
+        setWinMessage(`${itemArray[3]} won`)
+      }
+    else if(itemArray[6]===itemArray[7] &&
+      itemArray[6]===itemArray[8] &&
+      itemArray[6]!=="empty"){
+        setWinMessage(`${itemArray[6]} won`)
+      }
+    else if(itemArray[0]===itemArray[3] &&
+      itemArray[0]===itemArray[6] &&
+      itemArray[0]!=="empty"){
+        setWinMessage(`${itemArray[0]} won`)
+      }
+    else if(itemArray[1]===itemArray[4] &&
+      itemArray[1]===itemArray[7] &&
+      itemArray[1]!=="empty"){
+        setWinMessage(`${itemArray[1]} won`)
+      }
+    else if(itemArray[2]===itemArray[5] &&
+      itemArray[2]===itemArray[8] &&
+      itemArray[2]!=="empty"){
+        setWinMessage(`${itemArray[2]} won`)
+      }
+    else if(itemArray[0]===itemArray[4] &&
+      itemArray[0]===itemArray[8] &&
+      itemArray[0]!=="empty"){
+        setWinMessage(`${itemArray[0]} won`)
+      }
+    else if(itemArray[2]===itemArray[4] &&
+      itemArray[2]===itemArray[6] &&
+      itemArray[2]!=="empty"){
+        setWinMessage(`${itemArray[6]} won`)
+      }
+    else if(itemArray[0]!=="empty" && itemArray[1]!=="empty" && itemArray[2]!=="empty" && itemArray[3]!=="empty" && itemArray[4]!=="empty" && itemArray[5]!=="empty" && itemArray[6]!=="empty" && itemArray[7]!=="empty" && itemArray[8]!=="empty"){
+      
+      reloadGame()
+    }
+    
+}
 
   const changeItem = itemNumber =>{
     if(winMessage){
